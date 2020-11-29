@@ -1,0 +1,30 @@
+{
+  "name": "typescript-and-node-js-project",
+  "version": "1.0.0",
+  "author": "tan-yuki",
+  "private": true,
+  "description": "",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node .",
+    "postinstall": "check-engines"
+  },
+  "devDependencies": {
+    "@types/node": "^12.19.7",
+    "check-engines": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
+  }
+}
