@@ -1,5 +1,5 @@
 {
-  "name": "typescript-and-node-js-project",
+  "name": "hls-converter",
   "version": "1.0.0",
   "author": "tan-yuki",
   "private": true,
@@ -15,7 +15,7 @@
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
-    "start": "node .",
+    "start": "nodemon .",
     "postinstall": "check-engines"
   },
   "devDependencies": {
@@ -26,5 +26,8 @@
     "ts-node": "^9.0.0",
     "ts-node-dev": "^1.0.0",
     "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6"
   }
 }
